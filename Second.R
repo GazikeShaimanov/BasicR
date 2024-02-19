@@ -116,4 +116,11 @@ colors <- table(diamonds$color)
 colors
 barplot(colors, col = "#cc0000")
 
+hist(diamonds$carat,
+     breaks = 150, col = "#00ff90")
+
+colors <- table(diamonds$cut)
+colors
+barplot(colors, col = "#ff0000")
+
 rm(list = ls())
